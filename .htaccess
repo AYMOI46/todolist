@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect old /todolist/ URLs to root (for bookmarks after deployment move)
+RewriteRule ^todolist/(.*)$ /$1 [R=301,L]
+
+# Optional: send directory root to login
+DirectoryIndex index.php login.php
